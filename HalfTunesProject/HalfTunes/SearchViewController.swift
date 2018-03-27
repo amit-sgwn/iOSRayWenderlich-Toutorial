@@ -59,6 +59,7 @@ class SearchViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     tableView.tableFooterView = UIView()
+    downloadService.downloadsSession = downloadsSession
   
   }
 
