@@ -54,7 +54,9 @@ class TrackCell: UITableViewCell {
   @IBAction func pauseOrResumeTapped(_ sender: AnyObject) {
     if(pauseButton.titleLabel?.text == "Pause") {
       delegate?.pauseTapped(self)
-    } else {
+    }
+    else
+    {
       delegate?.resumeTapped(self)
     }
   }
