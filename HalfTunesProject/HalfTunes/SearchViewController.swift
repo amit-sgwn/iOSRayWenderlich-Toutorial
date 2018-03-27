@@ -51,9 +51,15 @@ class SearchViewController: UIViewController {
     return documentsPath.appendingPathComponent(url.lastPathComponent)
   }
 
+  lazy var downloadsSession : URLSession = {
+    let configuration = URLSessionConfiguration.default
+    return URLSession(configuration: configuration, delegate: self, delegateQueue: nil)
+  }()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     tableView.tableFooterView = UIView()
+  
   }
 
   func playDownload(_ track: Track) {
