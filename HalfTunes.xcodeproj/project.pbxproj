@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18C0C62A1DF4858D00393D33 /* StoryboardSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0C6291DF4858D00393D33 /* StoryboardSupport.swift */; };
+		287F5E9C206A4EFD00208259 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F5E9B206A4EFD00208259 /* Download.swift */; };
 		4051C2DE1E078EE00031FE46 /* SearchVC+SearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4051C2DD1E078EE00031FE46 /* SearchVC+SearchBarDelegate.swift */; };
 		409BF3EE1EB80BE2004B06AD /* QueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409BF3EC1EB80BE2004B06AD /* QueryService.swift */; };
 		409BF3EF1EB80BE2004B06AD /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409BF3ED1EB80BE2004B06AD /* DownloadService.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		18C0C6291DF4858D00393D33 /* StoryboardSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSupport.swift; sourceTree = "<group>"; };
+		287F5E9B206A4EFD00208259 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
 		4051C2DD1E078EE00031FE46 /* SearchVC+SearchBarDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SearchVC+SearchBarDelegate.swift"; sourceTree = "<group>"; };
 		409BF3EC1EB80BE2004B06AD /* QueryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryService.swift; sourceTree = "<group>"; };
 		409BF3ED1EB80BE2004B06AD /* DownloadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				D9EF8FEE1B53FDCB00EFC4B6 /* Track.swift */,
+				287F5E9B206A4EFD00208259 /* Download.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				287F5E9C206A4EFD00208259 /* Download.swift in Sources */,
 				D9EF8FEA1B53FD6900EFC4B6 /* SearchViewController.swift in Sources */,
 				409BF3EF1EB80BE2004B06AD /* DownloadService.swift in Sources */,
 				D9EF8FC71B53FD2100EFC4B6 /* AppDelegate.swift in Sources */,
