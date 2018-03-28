@@ -52,6 +52,7 @@ class TrackCell: UITableViewCell {
   @IBOutlet weak var downloadButton: UIButton!
   
   @IBAction func pauseOrResumeTapped(_ sender: AnyObject) {
+    print("==>")
     if(pauseButton.titleLabel?.text == "Pause") {
       delegate?.pauseTapped(self)
     }
@@ -59,6 +60,7 @@ class TrackCell: UITableViewCell {
     {
       delegate?.resumeTapped(self)
     }
+    print("<==")
   }
   
   @IBAction func cancelTapped(_ sender: AnyObject) {
@@ -69,7 +71,7 @@ class TrackCell: UITableViewCell {
     delegate?.downloadTapped(self)
   }
 
-  func configure(track: Track, downloaded: Bool) {
+  func configure(track: Track, downloaded: Bool , download : Download?) {
     titleLabel.text = track.name
     artistLabel.text = track.artist
 

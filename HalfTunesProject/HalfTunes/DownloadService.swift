@@ -70,6 +70,18 @@ class DownloadService {
 
   func cancelDownload(_ track: Track) {
     // TODO
+    if let download = activeDownloads[track.previewURL]
+    {
+      if download.isDownloading
+      {
+//        download.task?.cancel(byProducingResumeData: {data in
+//          download.resumeData = data
+//        })
+        download.task?.cancel()
+        activeDownloads[track.previewURL] = nil
+        download.isDownloading = false
+      }
+    }
   }
 
   func resumeDownload(_ track: Track) {
