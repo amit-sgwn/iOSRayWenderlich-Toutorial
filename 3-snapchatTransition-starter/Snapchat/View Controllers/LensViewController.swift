@@ -46,7 +46,7 @@ class LensViewController: UIViewController {
     
     lensCollectionView.delegate = self
     lensCollectionView.dataSource = self
-    lensCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
+    lensCollectionView.decelerationRate = UIScrollViewDecelerationRateFast //UIScrollView.DecelerationRate.fast
     lensCollectionView.register(LensCircleCell.self, forCellWithReuseIdentifier: LensCircleCell.identifier)
   }
 }
